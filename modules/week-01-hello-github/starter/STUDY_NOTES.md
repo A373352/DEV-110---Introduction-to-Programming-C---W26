@@ -79,16 +79,17 @@ Answer: Programmer skills are important because technical abilitiy, soft skills 
 
 ## Time Spent
 
-**Total time:** [11 hours]
+**Total time:** [9 hours]
 
 **Breakdown:**
 
--   Installing and configuring software: [4 hours]
+-   Installing and configuring software: [3 hours]
 -   Learning terminal/command line basics: [2 hours]
 -   Writing the "Hello, GitHub!" program: [1 hours]
 -   Understanding Git workflow: [1 hours]
 -   Testing and fixing issues: [1 hours]
 -   Writing documentation: [2 hours]
+-
 
 **Most time-consuming part:** [Which aspect took the longest and why?]
 
