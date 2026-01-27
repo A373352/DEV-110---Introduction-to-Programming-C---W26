@@ -1,6 +1,7 @@
 # Week 2: Calculator Lite - Study Notes
 
 **Name:**
+Aatiqa Imran
 
 ## Understanding Data Types
 
