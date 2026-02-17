@@ -24,10 +24,13 @@ public class Program
         // Create variables for:
         // - title: "Text Menu Studio"
         string title = "Text Menu Studio";
+
         // - subtitle: "Strings + Console Output Patterns"
         string subtitle = "Strings + Console Output Patterns";
+
         // - divider: 48 equals signs (hint: use new string() constructor)
         string divider = new string('=', 48);
+
         // Display: divider, title in uppercase, subtitle, divider
         Console.WriteLine(divider);
         Console.WriteLine(title.ToUpper());
@@ -42,18 +45,25 @@ public class Program
         {
             // TODO 3: Print the menu box
             Console.WriteLine();
+
             // Required menu option texts (tests check for these):
             Console.WriteLine("+-------------------------------+");
+
             // - 1) Greeting Card
             Console.WriteLine("| 1) Greeting Card              |");
+
             // - 2) Name Tag Formatter
             Console.WriteLine("| 2) Name Tag Formatter         |");
+
             // - 3) Phrase Analyzer
             Console.WriteLine("| 3) Phrase Analyzer            |");
+
             // - 4) Fancy Receipt Line
             Console.WriteLine("| 4) Fancy Receipt Line         |");
+
             // - 5) Menu Banner Builder
             Console.WriteLine("| 5) Menu Banner Builder        |");
+
             // - 6) Exit
 
             Console.WriteLine("\nMenu:");
@@ -219,19 +229,25 @@ public class Program
                     string userName = Console.ReadLine();
                     Console.Write("Enter a short message: ");
                     string shortMessage = Console.ReadLine();
+
                     // Required string operations:
                     // - Use Trim() to clean up the name
                     string trimUserName = userName.Trim();
+
                     // - Use ToUpper() for an uppercase version
                     string upperUserName = trimUserName.ToUpper();
+
                     // - Use concatenation OR interpolation for greeting text
                     Console.WriteLine($"Greeting Text: {shortMessage}");
+
                     // - Use string.Format() for at least one output line
                     Console.WriteLine(string.Format("Greeting: {0}", shortMessage));
+
                     // - Display a boxed card with the name, uppercase name, and message
                     Console.WriteLine(" -----------------------------------");
                     Console.WriteLine($"Hello, {trimUserName}");
                     Console.WriteLine($"Nice to meet you. {trimUserName}");
+
                     // Include the word "Message:" in your output
                     Console.WriteLine($"Message: {shortMessage}");
                     Console.WriteLine(" -----------------------------------");
@@ -244,26 +260,34 @@ public class Program
                     string firstName = Console.ReadLine();
                     Console.Write("Enter last name: ");
                     string lastName = Console.ReadLine();
+
                     // Required string operations:
                     // - Use Trim() on both inputs
                     string trimFirstName = firstName.Trim();
                     string trimLastName = lastName.Trim();
+
                     // - Use concatenation to build full name
                     Console.WriteLine("Full Name: " + trimFirstName + " " + trimLastName);
+
                     // - Use string indexing to get first characters for initials
                     Console.WriteLine(string.Format("Character: {0}{1}", trimFirstName[0], trimLastName[0]));
+
                     // - Use ToUpper() for initials
                     char trimFirstNameUpper = char.ToUpper(trimFirstName[0]);
                     char trimLastNameUpper = char.ToUpper(trimLastName[0]);
+
                     // - Use ToLower() for lowercase version
                     char trimFirstNameLower = char.ToLower(trimFirstName[0]);
                     char trimLastNameLower = char.ToLower(trimLastName[0]);
+
                     // Display three things:
                     // - Name tag with the full name (include a bracket [)
                     Console.WriteLine("----------------------------------------------------");
                     Console.WriteLine(string.Format("Full Name: [{0} {1}]", trimFirstName, trimLastName));
+
                     // - Initials (use word "Initials:" in label)
                     Console.WriteLine($"Initials: {trimFirstNameUpper}{trimLastNameUpper}");
+
                     // - Lowercase version (use word "Lowercase:" in label)
                     Console.WriteLine($"Lowercase: {trimFirstNameLower}{trimLastNameLower}");
                     Console.WriteLine("----------------------------------------------------");
@@ -274,19 +298,26 @@ public class Program
                     // Prompt: "Enter a phrase: "
                     Console.WriteLine("Enter a phrase: ");
                     string phrase = Console.ReadLine();
+
                     // Required string operations:
                     // - Use Trim() on input
                     string trimPhrase = phrase.Trim();
+
                     // - Use Length property
                     int length = trimPhrase.Length;
+
                     // - Use Contains() to check for letter 'a' (convert to lowercase first)
                     bool containsLetter = trimPhrase.ToLower().Contains('a');
+
                     // - Use Replace() to change spaces to dashes
                     string newPhrase = trimPhrase.Replace(' ', '-');
+
                     // - Use Split() to break into words
                     string[] words = trimPhrase.Split(' ');
+
                     // - Use string.Join() to create comma-separated list
                     string commaSeparated = string.Join(",", words);
+
                     // Display: length, contains check, dashed version, and words list
                     Console.WriteLine("----------------------------------------");
                     Console.WriteLine($"Length: {length}                       ");
@@ -304,13 +335,16 @@ public class Program
                     string itemName = Console.ReadLine().Trim();
                     double price = ReadDouble("Enter Price: ");
                     int quantity = ReadIntInRange("Enter quantity (1-9):", 1, 9);
+
                     // Required:
                     // - Calculate total (price * quantity)
                     double total = price * quantity;
+
                     // - Create a receipt table with header row (ITEM, QTY, TOTAL)
                     Console.WriteLine("+-------------------------------------+");
                     Console.WriteLine("| ITEM          QTY            TOTAL  |");
                     Console.WriteLine("+-------------------------------------+");
+
                     // - Use string.Format() with composite formatting for the data row
                     // - Use alignment specifiers (left/right alignment)
                     // - Use currency format specifier (:C2) for the total
@@ -324,20 +358,25 @@ public class Program
                     string bannerTitle = Console.ReadLine();
                     Console.Write("Enter a subtitle: ");
                     string bannerSubTitle = Console.ReadLine();
+
                     // Use ReadIntInRange for width (min=30, max=60)
                     int width = ReadIntInRange("Enter width: ", 30, 60);
+
                     // Required string operations:
                     // - Create border line with equals signs (use new string constructor)
                     string border = new string('=', width);
+
                     // - Use PadLeft() to center text (formula: (width + text.Length) / 2)
                     // - Use ToUpper() on title
                     string centeredTitle = bannerTitle.ToUpper().PadLeft((width + title.Length) / 2);
                     bannerSubTitle = bannerSubTitle.PadLeft((width + bannerSubTitle.Length) / 2);
+
                     // - Display banner with borders and centered text
                     Console.WriteLine(border);
                     Console.WriteLine(centeredTitle);
                     Console.WriteLine(bannerSubTitle);
                     Console.WriteLine(border);
+
                     // - Show three alignment examples (centered, left, right)
                     Console.WriteLine("----------------------------------------------------");
                     Console.WriteLine(bannerSubTitle);
@@ -350,16 +389,21 @@ public class Program
                     // ===== OPTION 6: Exit with String Analysis =====
                     // Prompt: "Enter a closing word: "
                     Console.Write("Enter a closing word:");
-                    string closingWord = Console.ReadLine();
+                    string closingWord = Console.ReadLine() ? string.Empty ; 
+
                     // Required string operations (demonstrate these 4 methods):
                     // - Use Equals() with StringComparison.OrdinalIgnoreCase to compare with "goodbye"
                     bool isGoodbye = closingWord.Equals("goodbye", StringComparison.OrdinalIgnoreCase);
+
                     // - Use Substring() to extract first 3 characters (check length first!)
                     string firstThree = closingWord.Length >= 3 ? closingWord.Substring(0, 3) : closingWord;
+
                     // - Use EndsWith() to check if ends with "!"
                     bool endsWithExclamation = closingWord.EndsWith("!");
+
                     // - Use IndexOf() to find position of space character
                     int spacePosition = closingWord.IndexOf(' ');
+
                     // Display the results of all four operations
                     Console.WriteLine("--------------------------------------");
                     Console.WriteLine($"Goodbye: {isGoodbye}                 ");
@@ -367,6 +411,7 @@ public class Program
                     Console.WriteLine($"Exclamation: {endsWithExclamation}   ");
                     Console.WriteLine($"Space Position: {spacePosition}      ");
                     Console.WriteLine("--------------------------------------");
+
                     // Then print: "Goodbye!"
 >>>>>>> adfe9d7(Cleaned code formatting)
                     Console.WriteLine("Goodbye!");
