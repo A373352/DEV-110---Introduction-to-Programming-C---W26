@@ -1,14 +1,14 @@
 /*******************************************************************************
-- Course: DEV 110
-- Instructor: Zak Brinlee
-- Term: Winter 2026
-- Programmer: Aatiqa
-
-- Assignment: Week 9 Lab - Movie Tracker (LINQ Reports)
--
-- What does this program do?:
-- Defines a Movie class used by the Movie Tracker LINQ Reports lab.
-- */
+ * Course: DEV 110
+ * Instructor: Zak Brinlee
+ * Term: Winter 2026
+ *
+ * Programmer: YourName
+ * Assignment: Week 10 Lab - Movie Tracker (Save & Load)
+ *
+ * What does this program do?:
+ * Defines a Movie class used by the Movie Tracker Save & Load lab.
+ * ******************************************************************************/
 
 namespace MovieTracker;
 
@@ -41,10 +41,10 @@ public class Movie
         string stars = GetStarDisplay();
 
         Console.WriteLine("╔════════════════════════════════════════╗");
-        Console.WriteLine($"  📽️  {Title} ({Year})");
+        Console.WriteLine($"  📽️ {Title} ({Year})");
         Console.WriteLine($"  🎬 Director: {Director}");
         Console.WriteLine($"  🎭 Genre: {Genre}");
-        Console.WriteLine($"  ⏱️  Runtime: {RuntimeMinutes} min");
+        Console.WriteLine($"  ⏱️ Runtime: {RuntimeMinutes} min");
         Console.WriteLine($"  ⭐ Rating: {stars} ({Rating:0.0}/5.0)");
         Console.WriteLine("╚════════════════════════════════════════╝");
     }
@@ -53,8 +53,6 @@ public class Movie
     {
         int filledStars = (int)Math.Round(Rating);
         int emptyStars = 5 - filledStars;
-
-        string stars = new string('★', filledStars) + new string('☆', emptyStars);
-        return stars;
+        return new string('★', filledStars) + new string('☆', emptyStars);
     }
 }

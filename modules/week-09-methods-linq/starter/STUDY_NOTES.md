@@ -55,7 +55,7 @@ Answer: Methods felt eaiser to understan because they are simple to use and help
 
 **Most time-consuming part:** [Which aspect took the longest and why?]
 
-Answer: All of the took same time but debugging the program as erros happene such as missing paranthesis and expressions.
+Answer: All of the took same time but debugging the program as errors happen such as missing parenthesis and expressions.
 
 ## Reflection
 

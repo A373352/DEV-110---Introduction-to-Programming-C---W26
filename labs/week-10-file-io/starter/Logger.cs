@@ -1,15 +1,15 @@
 /*******************************************************************************
-- Course: DEV 110
-- Instructor: Zak Brinlee
-- Term: Winter 2026
-
-- Programmer: Aatiqa
-
-- Assignment: Week 9 Lab - Movie Tracker (LINQ Reports)
--
-- What does this program do?:
-- Provides a global logging utility for informational and warning messages.
-- */
+ * Course: DEV 110
+ * Instructor: Zak Brinlee
+ * Term: Winter 2026
+ *
+ * Programmer: YourName
+ * Assignment: Week 10 Lab - Movie Tracker (Save & Load)
+ *
+ * What does this program do?:
+ * Provides a global logging utility for informational and warning messages.
+ * This file is fully provided — no changes needed here.
+ * ******************************************************************************/
 
 using System.Text.Json;
 
