@@ -10,6 +10,7 @@
 - Defines a ScoreReport class students complete using LINQ methods.
 - */
 
+using System;
 using System.Globalization;
 using System.Linq;
 
@@ -94,7 +95,7 @@ internal class ScoreReport
     // - Print exactly: Sorted (asc): 10, 20, 30
     private void PrintScoresSorted()
     {
-        sorted = _scores.OrderBy(score => score);
+        IEnumerable<int> sorted = _scores.OrderBy(score => score);
         string result = string.Join(",", sorted);
         Console.WriteLine($"Sorted (asc): {result}");
     }
@@ -106,7 +107,7 @@ internal class ScoreReport
     // - Print exactly: Top X: 30, 20, 10
     private void PrintTopScores(int topCount)
     {
-        top = _scores.OrderByDescending(score => score).Take(topCount);
+        IEnumerable<int> top = _scores.OrderByDescending(score => score).Take(topCount);
         string result = string.Join(", ", top);
         Console.WriteLine($"Top {topCount}: {result}");
     }
@@ -118,7 +119,7 @@ internal class ScoreReport
     // - Print exactly: Passing scores (desc): 30, 20
     private void PrintPassingScores()
     {
-        passingScores = _scores.Where(score => score >= Threshold).OrderByDescending(score => score);
+        IEnumerable<int> passingScores = _scores.Where(score => score >= Threshold).OrderByDescending(score => score);
         string result = string.Join(", ", passingScores);
         Console.WriteLine($"Passing scores (desc): {result}");
     }
@@ -130,7 +131,7 @@ internal class ScoreReport
     // - Print exactly: Failing scores (desc): 10
     private void PrintFailingScores()
     {
-        failingScores = _scores.Where(score => score < Threshold).OrderByDescending(score => score);
+        IEnumerable<int> failingScores = _scores.Where(score => score < Threshold).OrderByDescending(score => score);
         string result = string.Join(", ", failingScores);
         Console.WriteLine($"Failing scores (desc): {result}");
     }
