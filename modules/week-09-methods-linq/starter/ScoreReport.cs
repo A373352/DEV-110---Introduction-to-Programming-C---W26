@@ -64,7 +64,7 @@ internal class ScoreReport
     {
         int min = _scores.Min();
         int max = _scores.Max();
-        double average = _ores.Average();
+        double average = _scores.Average();
         int count = _scores.Count();
         Console.WriteLine($"Count: {count}");
         Console.WriteLine($"Min: {min}");
