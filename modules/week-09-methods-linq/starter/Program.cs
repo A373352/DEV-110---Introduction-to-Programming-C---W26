@@ -2,8 +2,8 @@
 - Course: DEV 110
 - Instructor: Zak Brinlee
 - Term: Winter 2026
--
-- Programmer: YourName
+- Programmer: Aatiqa
+
 - Assignment: Week 9: Score Stats (Methods + LINQ)
 -
 - What does this program do?:

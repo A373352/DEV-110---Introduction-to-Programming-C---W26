@@ -3,15 +3,21 @@
 - Instructor: Zak Brinlee
 - Term: Winter 2026
 -
-- Programmer: YourName
+
+- Programmer: Aatiqa
+
 - Assignment: Week 9 Lab - Movie Tracker (LINQ Reports)
 -
 - What does this program do?:
 - Builds a menu-driven movie reports app using LINQ (Min/Max/Average/OrderBy).
 - */
 
+
+using System;
+
 using System.Globalization;
 using System.Linq;
+
 
 namespace MovieTracker;
 

@@ -2,8 +2,8 @@
 - Course: DEV 110
 - Instructor: Zak Brinlee
 - Term: Winter 2026
--
-- Programmer: YourName
+- Programmer: Aatiqa Imran
+
 - Assignment: Week 8: Mad Libs (Structure + Debugging)
 -
 - What does this program do?:
