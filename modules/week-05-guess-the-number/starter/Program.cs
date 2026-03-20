@@ -52,7 +52,7 @@ public class Program
                 // Prompt: $"Guess a number (1-{maxValue}): "
                 // Hint: int.TryParse() and continue the loop if invalid
                 // Hint: if parsing fails, skip feedback and ask again
-                Conosle.Write($"Guess a number (1-{maxValue}): ");
+                Console.Write($"Guess a number (1-{maxValue}): ");
                 string input = Console.ReadLine();
                 if (!int.TryParse(input, out guess))
                 {
@@ -65,7 +65,7 @@ public class Program
                 guessCount++;
                 if (guess < secret)
                 {
-                    Console.WriteLine("Two low.");
+                    Console.WriteLine("Too low.");
                 }
                 else if (guess > secret)
                 {
@@ -105,6 +105,3 @@ public class Program
         return value;
     }
 }
-
-
-
