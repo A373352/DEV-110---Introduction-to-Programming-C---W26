@@ -149,17 +149,17 @@ Your app must clearly demonstrate **all 8** of the following:
 
 _Fill out this section before submitting. Write in your own words — a few sentences per prompt is enough._
 
-**Name:**
+**Name:**-Aatiqa
 
-**App Name:**
+**App Name:** Budget Tracker
 
----
+--
 
 ### What I Built
 
 _Describe your app in 1–3 sentences. What does it do? Who might use it?_
 
-Answer:
+Answer: I built a console application called Budget Tracker. The app alows user to add expense, view their expenses, calculate the toal amount spent and save the expenses to a file. It can be use by students or anyone who wants to keep track of their daily spending.
 
 ---
 
@@ -167,7 +167,7 @@ Answer:
 
 _Why did this app interest you? What made it feel like a good fit for what you know?_
 
-Answer:
+Answer: I choose this idea because managing money and tracking expenses is useful in everyday life. I also thought it would be good project because it allowed me to practice the programming concepts we learned in class like lists, loops and file saving.
 
 ---
 
@@ -175,21 +175,21 @@ Answer:
 
 _For each concept below, write one sentence describing where it appears in your code._
 
-**Variables & data types:**
+**Variables & data types:** I used variable like name (string), category (string), amount (double), and choice (int) to store user input.
 
-**If/else decisions:**
+**If/else decisions:** I used if / else statements to decide which menu option the user selected such as adding expenses or viewing expenses.
 
-**Loops:**
+**Loops:** I used a while loop to keep the program running until the user chooses to exit and a foreach loop to display all expenses.
 
-**Formatted string output:**
+**Formatted string output:** I used formatted strings like $"{e.Name} | {e.Category} | ${e.Amount}" to display the expense information clearly.
 
-**Array or List:**
+**Array or List:** I used a List<Expense> to store multiple expenses entered by the user.
 
-**Custom class:**
+**Custom class:** I created a custom class called Expense to store the name, category and amount of each expense
 
-**Named methods:**
+**Named methods:** I created methods such as AddExpense(), ViewExpenses(), ShowTotal(), and SaveExpenses() to organize the code.
 
-**File I/O:**
+**File I/O:** I used StreamWriter to save the list of expenses into a file called expenses.txt.
 
 ---
 
@@ -197,7 +197,7 @@ _For each concept below, write one sentence describing where it appears in your 
 
 _What part of the project was hardest? How did you work through it?_
 
-Answer:
+Answer: The most challenging part was fixing errors and making sure the program compiled correctly. Sometimes the program had small mistakes like incorrect variable names, and I had to carefully read the error messages to fix them.
 
 ---
 
@@ -205,7 +205,7 @@ Answer:
 
 _If you had more time, what would you change, add, or improve?_
 
-Answer:
+Answer: If I had more time, I wuld improve the program by adding better input validation so the program doesn't not crash if the user enters incorrect data. I would also add a feature to load previously saved expenses from a file.
 
 ---
 
@@ -215,8 +215,8 @@ _Roughly how many hours did you spend total? Give a short breakdown._
 
 | Task                  | Time |
 | --------------------- | ---- |
-| Planning / DATA_MODEL |      |
-| Writing code          |      |
-| Debugging             |      |
-| Reflection / README   |      |
-| **Total**             |      |
+| Planning / DATA_MODEL |   1  |
+| Writing code          |   2  |
+| Debugging             |   1  |
+| Reflection / README   |   0.5|
+| **Total**             |   4.5|
